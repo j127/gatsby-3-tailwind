@@ -11,7 +11,7 @@ const IndexPage: React.FC = (): JSX.Element => {
                 description="This is the home page"
                 isHomepage={true}
             />
-            <h1>hell world</h1>
+            <h1>Hello World</h1>
         </Layout>
     );
 };

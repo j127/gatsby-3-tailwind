@@ -1,8 +1,14 @@
 import React from "react";
 
+import Navbar from "./navbar";
+
 const Layout: React.FC = ({ children }): JSX.Element => {
-    console.log("children", children);
-    return <div>{children}</div>;
+    return (
+        <>
+            <Navbar />
+            <div>{children}</div>
+        </>
+    );
 };
 
 export default Layout;

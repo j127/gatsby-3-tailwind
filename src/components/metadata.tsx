@@ -46,14 +46,14 @@ type MetadataProps = {
  *
  * https://github.com/nfl/react-helmet
  */
-const Metadata = ({
+const Metadata: React.FC<MetadataProps> = ({
     title,
     description,
     isHomepage = false,
     lang = "en",
     isNoIndex = false,
     bodyClass = "default",
-}: MetadataProps) => {
+}) => {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -79,10 +79,13 @@ const Metadata = ({
     const metaRobots = isNoIndex === true ? "noindex" : null;
 
     return (
-        <Helmet defaultTitle={title} titleTemplate={titleTemplate}>
+        <Helmet title={title} titleTemplate={titleTemplate}>
             <html lang={lang} />
             <body className={bodyClass} />
             <meta name="description" content={description} />
+
+            {/* Override to remove the version number */}
+            <meta name="generator" content="Gatsby" />
 
             {metaRobots ? <meta name="robots" content={metaRobots} /> : null}
         </Helmet>
