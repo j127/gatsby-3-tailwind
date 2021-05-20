@@ -14,8 +14,8 @@ const Navbar: React.FC = (): JSX.Element => {
     `);
 
     return (
-        <nav>
-            <ul>
+        <nav className="px-4 py-4 mb-4 border-b-2">
+            <ul className="flex flex-wrap items-center justify-between">
                 <li>
                     <Link to="/">{site.siteMetadata.title}</Link>
                 </li>

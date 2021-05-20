@@ -8,7 +8,7 @@ const AboutPage: React.FC = (): JSX.Element => {
         <Layout>
             <Metadata title="About Page" description="This is the About page" />
 
-            <h1>About Page</h1>
+            <h1 className="title">About Page</h1>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis, eius ea ipsam, consectetur, deleniti ullam error

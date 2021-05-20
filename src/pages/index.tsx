@@ -13,7 +13,11 @@ const IndexPage: React.FC = () => {
                 description="This is the home page"
                 isHomepage={true}
             />
-            <h1>Hello World</h1>
+            <h1 className="title">Hello World</h1>
+            <p>
+                The code is{" "}
+                <a href="https://github.com/j127/gatsby-3-tailwind">here</a>.
+            </p>
             <p>
                 <Button>click me</Button>
             </p>

@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
 interface Props {
-    children: JSX.Element[] | JSX.Element;
+    children: JSX.Element[] | JSX.Element | string;
 }
 
 export default function Button({ children }: Props): ReactElement {
