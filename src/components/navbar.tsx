@@ -18,6 +18,8 @@ const Navbar: React.FC = (): JSX.Element => {
             <ul>
                 <li>
                     <Link to="/">{site.siteMetadata.title}</Link>{" "}
+                </li>
+                <li>
                     <Link to="/about/">About</Link>
                 </li>
             </ul>
