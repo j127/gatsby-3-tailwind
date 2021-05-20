@@ -1,12 +1,14 @@
 module.exports = {
     siteMetadata: {
-        title: "del-gatsby",
+        title: "Test Site",
+        description: "This is a website",
+        author: "me",
     },
     plugins: [
         "gatsby-plugin-postcss",
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sitemap",
+        // "gatsby-plugin-sitemap",
         {
             resolve: "gatsby-plugin-manifest",
             options: {
