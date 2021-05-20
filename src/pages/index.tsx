@@ -3,7 +3,9 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Metadata from "../components/metadata";
 
-const IndexPage: React.FC = (): JSX.Element => {
+import Button from "../components/button";
+
+const IndexPage: React.FC = () => {
     return (
         <Layout>
             <Metadata
@@ -12,6 +14,9 @@ const IndexPage: React.FC = (): JSX.Element => {
                 isHomepage={true}
             />
             <h1>Hello World</h1>
+            <p>
+                <Button>click me</Button>
+            </p>
         </Layout>
     );
 };
